@@ -42,18 +42,26 @@ public class CardTrick {
         usercard.setValue(uservalue);
         // and search magicHand here
         //Then report the result here
-        for (Card c : magicHand) {
-            if (c.getValue() == usercard.getValue() && c.getSuit().equalsIgnoreCase(usercard.getSuit())) {
-                System.out.println("your card is in magichand");
-                return;
-            }
-        }
-        System.out.println("Sorry your card is not in magichand");
+//        for (Card c : magicHand) {
+//            if (c.getValue() == usercard.getValue() && c.getSuit().equalsIgnoreCase(usercard.getSuit())) {
+//                System.out.println("your card is in magichand");
+//                return;
+//            }
+//        }
+//        System.out.println("Sorry your card is not in magichand");
 
         // add one luckcard hard code 2,clubs
         Card luckcard=new Card();
         luckcard.setValue(2);
         luckcard.setSuit("Clubs");
+        
+        for (Card c : magicHand) {
+            if (c.getValue() == luckcard.getValue() && c.getSuit().equalsIgnoreCase(luckcard.getSuit())) {
+                System.out.println("you are winner");
+                return;
+            }
+        }
+        System.out.println("Sorry you lost");
     }
 
 }
