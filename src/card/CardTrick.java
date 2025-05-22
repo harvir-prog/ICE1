@@ -13,13 +13,13 @@ package card;
  * @modifier Harvir Singh
  * Student number=991760185
  */
-import java.util.Scanner;
+//import java.util.Scanner;
 import java.util.Random;
 
 public class CardTrick {
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+//        Scanner input = new Scanner(System.in);
         Random rand = new Random();
         Card[] magicHand = new Card[7];
 
@@ -31,15 +31,15 @@ public class CardTrick {
         }
 
         //insert code to ask the user for Card value and suit, create their card
-        System.out.println("enter the card value");
-        int uservalue = input.nextInt();
-        input.nextLine();
-        System.out.println("enter the suit");
-        String userSuit = input.nextLine();
+//        System.out.println("enter the card value");
+//        int uservalue = input.nextInt();
+//        input.nextLine();
+//        System.out.println("enter the suit");
+//        String userSuit = input.nextLine();
 
-        Card usercard = new Card();
-        usercard.setSuit(userSuit);
-        usercard.setValue(uservalue);
+//        Card usercard = new Card();
+//        usercard.setSuit(userSuit);
+//        usercard.setValue(uservalue);
         // and search magicHand here
         //Then report the result here
 //        for (Card c : magicHand) {
