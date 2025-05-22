@@ -51,6 +51,9 @@ public class CardTrick {
         System.out.println("Sorry your card is not in magichand");
 
         // add one luckcard hard code 2,clubs
+        Card luckcard=new Card();
+        luckcard.setValue(2);
+        luckcard.setSuit("Clubs");
     }
 
 }
